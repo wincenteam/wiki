@@ -265,7 +265,9 @@ gero有两种导入账户的方式，分别是导入 $seed$ 和导入 $TK$ ，�
   * 利用助记词导入 $seed$，在web3里面：
 
   ```javascript
-  > personal.importMnemonic("uncle frost ex.....ion before","123456")  //助记词,密码
+  > personal.importMnemonic("uncle frost ex.....ion before", ///助记词
+  "123456", // 密码
+  1800000)  // 账户从1800000块开始进行余额分析
   "GwA94QDTyQ86cE5jcu......aZPRMUwR8k5uW4bT3DvPf77a5"    //公钥PK
   ```
 
